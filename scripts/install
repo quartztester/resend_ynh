@@ -1,0 +1,15 @@
+#!/bin/bash
+
+source _common.sh
+source /usr/share/yunohost/helpers
+
+#=================================================
+# INSTALL
+#=================================================
+ynh_script_progression "Setting up the Resend quicklink..."
+
+ynh_config_add_nginx
+
+ynh_permission_update --permission "main" --add "visitors" || true
+
+ynh_script_progression "Installation of $app completed"

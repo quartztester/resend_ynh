@@ -1,0 +1,6 @@
+#!/bin/bash
+source _common.sh
+source /usr/share/yunohost/helpers
+ynh_script_progression "Upgrading $app..."
+ynh_config_add_nginx
+ynh_script_progression "Upgrade of $app completed"

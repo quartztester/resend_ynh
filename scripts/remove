@@ -1,0 +1,13 @@
+#!/bin/bash
+
+source _common.sh
+source /usr/share/yunohost/helpers
+
+#=================================================
+# REMOVE
+#=================================================
+ynh_script_progression "Removing the Resend quicklink..."
+
+ynh_config_remove_nginx
+
+ynh_script_progression "Removal of $app completed"

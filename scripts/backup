@@ -1,0 +1,6 @@
+#!/bin/bash
+source ../settings/scripts/_common.sh
+source /usr/share/yunohost/helpers
+ynh_script_progression "Backing up $app..."
+ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf"
+ynh_script_progression "Backup of $app completed"
