@@ -12,6 +12,10 @@ tile.
 - Portal tile with the Resend logo, quicklink to resend.com
 - Pure nginx redirect — no app process, no database
 
+## Screenshots
+
+![Redirect target of the quicklink](./doc/screenshots/destination.png)
+
 ## Links
 
 - Upstream: <https://resend.com>
