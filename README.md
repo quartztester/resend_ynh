@@ -1,4 +1,7 @@
-# Resend quicklink for YunoHost
+<h1>
+  <img src="logos/resend.png" width="48" alt="Resend quicklink logo">
+  Resend quicklink for YunoHost
+</h1>
 
 A dashboard tile that links out to [Resend](https://resend.com) — the email
 API service for developers. No local service is run: nginx answers with a
@@ -14,7 +17,7 @@ tile.
 
 ## Screenshots
 
-![Redirect target of the quicklink](./doc/screenshots/destination.png)
+![Resend quicklink — destination](./doc/screenshots/destination.png)
 
 ## Links
 
