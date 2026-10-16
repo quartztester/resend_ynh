@@ -1,6 +1,21 @@
 #!/bin/bash
+
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
 source _common.sh
 source /usr/share/yunohost/helpers
+
+#=================================================
+# REAPPLY SYSTEM CONFIGURATION
+#=================================================
+
 ynh_script_progression "Upgrading $app..."
 ynh_config_add_nginx
+
+#=================================================
+# END OF SCRIPT
+#=================================================
+
 ynh_script_progression "Upgrade of $app completed"

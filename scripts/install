@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
 source _common.sh
 source /usr/share/yunohost/helpers
 
@@ -8,8 +12,20 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Setting up the Resend quicklink..."
 
+#=================================================
+# REAPPLY SYSTEM CONFIGURATION
+#=================================================
+
 ynh_config_add_nginx
 
+#=================================================
+# SETUP VISITORS PERMISSION
+#=================================================
+
 ynh_permission_update --permission "main" --add "visitors" || true
+
+#=================================================
+# END OF SCRIPT
+#=================================================
 
 ynh_script_progression "Installation of $app completed"

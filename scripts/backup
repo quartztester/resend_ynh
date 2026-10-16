@@ -1,6 +1,21 @@
 #!/bin/bash
+
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
 source ../settings/scripts/_common.sh
 source /usr/share/yunohost/helpers
+
+#=================================================
+# BACKUP SYSTEM CONFIGURATION
+#=================================================
+
 ynh_script_progression "Backing up $app..."
 ynh_backup "/etc/nginx/conf.d/$domain.d/$app.conf"
+
+#=================================================
+# END OF SCRIPT
+#=================================================
+
 ynh_script_progression "Backup of $app completed"
