@@ -3,4 +3,3 @@
 test_format = 1.0
 
 [default]
-    test_upgrade_from.4b3a89e6c1cd4e0a5e5b8c7d6f2a1b3c4d5e6f7a.name = "1.0~ynh1"
