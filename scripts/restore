@@ -3,4 +3,7 @@ source ../settings/scripts/_common.sh
 source /usr/share/yunohost/helpers
 ynh_script_progression "Restoring $app..."
 ynh_restore "/etc/nginx/conf.d/$domain.d/$app.conf"
+# the conf file is back but nginx still runs the config from before the
+# removal — without this the app 404s until the next unrelated reload
+systemctl reload nginx
 ynh_script_progression "Restore of $app completed"
